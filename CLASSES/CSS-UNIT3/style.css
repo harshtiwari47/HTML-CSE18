@@ -1,0 +1,11 @@
+body {
+  background: rgb(167, 192, 234);
+  background-image: url("img.jpg");
+  background-repeat: no-repeat;
+  background-size: fill;
+}
+
+h1 {
+  color: #529fde;
+}
+    
