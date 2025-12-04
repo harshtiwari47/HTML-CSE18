@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        main{
+            width: auto;
+            height: auto;
+            background-color: bisque;
+            display: grid;
+            /* grid-template-columns:200px 300px auto 140px; */
+            grid-template-columns: repeat(4,1fr);
+            gap: 10px;
+        }
+        .box{
+            background-color: aqua;
+            height: 200px;
+        }
+        @media screen and (max-width:500px){
+            main{
+                display: grid;
+                grid-template-columns: 2fr 1fr;
+                gap: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+    </main>
+    
+</body>
+</html>
