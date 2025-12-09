@@ -1,15 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>E-COMMERCE WEBSITE</title>
 
     <style>
-        
+      * {
+        padding: 0;
+        margin: 0;
+      }
+
+      body {
+        background: linear-gradient(rgb(212, 228, 240), rgb(215, 222, 226));
+      }
+
+      nav {
+        width: 100%;
+        height: 60px;
+        background: linear-gradient(45deg, rgba(255, 255, 255, 0.249), rgb(220, 223, 243));
+        border-bottom: 1px solid rgba(145, 195, 194, 0.644);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      h1 {
+        color: rgb(24, 91, 70);
+      }
+
+      main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2em;
+        height: calc(100vh - 120px);
+      }
+      .product {
+        width: max(300px, 30vw);
+        background: linear-gradient(white, rgb(202, 230, 229));
+        padding: 1em;
+        border-radius: 1em;
+        box-sizing: border-box;
+        border-bottom: 1.5px solid rgba(109, 156, 156, 0.644);
+      }
+      .product img {
+        width: 100%;
+        max-height: 30vh;
+        object-fit: contain;
+        margin-bottom: 1em;
+      }
+
+      .product h3 {
+        color: rgb(41, 66, 58);
+      }
+
+      .product .description {
+        color: rgb(51, 90, 78);
+        padding: .5em 0;
+        font-size: 0.9rem;
+      }
+
+      .product .price {
+        padding: 0.5em 0;
+      }
+
+      .product .price strong {
+        color:rgb(2, 105, 72);
+        padding: 0 1em 0 0;
+      }
+
+      .product button {
+        width: 100%;
+        padding: 0.5em 1em;
+        border: 0;
+        border-radius: 1em;
+        background: green;
+        color: aliceblue;
+        font-weight: 900;
+      }
+
     </style>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <nav>
+      <h1>SHOPEASY</h1>
+    </nav>
+
+    <main>
+        <div class="product">
+            <img src="shirt.png"/>
+            <h3>Classic Cotton Shirt</h3>
+            <p class="description">Soft, breathable cotton. Regular fit. Available in multiple colors.</p>
+            <p class="price"><strong>&#8377 799</strong> <strike>&#8377 1199<strike></p>
+            <button>ADD TO CART</button>
+        </div>
+    </main>
+  </body>
 </html>
