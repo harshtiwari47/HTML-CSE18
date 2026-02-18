@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Navbar</title>
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        background: linear-gradient(#ecf0f4, #f1f2f1);
+        height: 100vh;
+        font-family: "Times New Roman", Times, serif;
+      }
+      header {
+        width: 100%;
+        display: flex;
+        height: 4.5em;
+        background: linear-gradient(to bottom, #f5fafc, #f1f2f1);
+        border-bottom: 1.2px solid #849cab;
+        align-items: center;
+        padding: 1em 2em;
+        box-sizing: border-box;
+      }
+      nav {
+        width: 100%;
+        display: flex;
+        min-height: 4em;
+        background: linear-gradient(to bottom, #d3e0e8, #f1f2f1);
+        border-bottom: 1.2px solid #d7eaf5;
+        align-items: center;
+        padding: 1em 2em;
+        box-sizing: border-box;
+      }
+
+      nav ul {
+        width: 100%;
+        display: flex;
+        height: 100%;
+        align-items: center;
+        box-sizing: border-box;
+        justify-content: space-around;
+        list-style: none;
+        flex-wrap: wrap;
+        row-gap: 1em;
+      }
+
+      nav ul li {
+        border-right: 0.1em solid #8f9fa8;
+        padding: 0 1em;
+        flex-grow: 1;
+        display: grid;
+        place-items: center;
+        font-weight: 500;
+        letter-spacing: 1px;
+      }
+
+      nav ul li:hover {
+        color: blue;
+        font-weight: 900;
+      }
+
+      nav ul li:last-child {
+        border: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>NEW YORK TIMES</h1>
+    </header>
+    <nav>
+      <ul>
+        <li>International</li>
+        <li>Live</li>
+        <li>Popular</li>
+        <li>Latest</li>
+        <li>Games</li>
+        <li>Cooking</li>
+      </ul>
+    </nav>
+  </body>
+</html>
